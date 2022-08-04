@@ -35,99 +35,92 @@ func printCard(suit string, value string) {
 				fmt.Print("-")
 			} else if w == 1 || w == width {
 				fmt.Print("|")
-			} else if h == 2 && w == 2 || w == 8 && h == 8 {
-				switch {
-				case value == "Ace":
-					fmt.Print("A")
-				case value == "Two":
-					fmt.Print("2")
-				case value == "Three":
-					fmt.Print("3")
-				case value == "Four":
-					fmt.Print("4")
-				case value == "Five":
-					fmt.Print("5")
-				case value == "Six":
-					fmt.Print("6")
-				case value == "Seven":
-					fmt.Print("7")
-				case value == "Eight":
-					fmt.Print("8")
-				case value == "Nine":
-					fmt.Print("9")
-				case value == "Ten":
-					fmt.Print("10")
-				case value == "Jack":
-					fmt.Print("J")
-				case value == "Queen":
-					fmt.Print("Q")
-				case value == "King":
-					fmt.Print("K")
-				}
 			} else {
 				switch {
 				case value == "Ace":
-					if h == 5 && w == 5 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("A")
+					} else if h == 5 && w == 5 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Two":
-					if h == 3 && w == 3 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("2")
+					} else if h == 3 && w == 3 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Three":
-					if h == 3 && w == 5 || h == 5 && w == 5 || h == 7 && w == 5 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("3")
+					} else if h == 3 && w == 5 || h == 5 && w == 5 || h == 7 && w == 5 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Four":
-					if h == 3 && w == 3 || h == 7 && w == 3 || h == 3 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("4")
+					} else if h == 3 && w == 3 || h == 7 && w == 3 || h == 3 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Five":
-					if h == 3 && w == 3 || h == 7 && w == 3 || h == 5 && w == 5 || h == 3 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("5")
+					} else if h == 3 && w == 3 || h == 7 && w == 3 || h == 5 && w == 5 || h == 3 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Six":
-					if h == 3 && w == 3 || h == 5 && w == 3 || h == 7 && w == 3 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("6")
+					} else if h == 3 && w == 3 || h == 5 && w == 3 || h == 7 && w == 3 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Seven":
-					if h == 3 && w == 3 || h == 5 && w == 3 || h == 7 && w == 3 || h == 5 && w == 5 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("7")
+					} else if h == 3 && w == 3 || h == 5 && w == 3 || h == 7 && w == 3 || h == 5 && w == 5 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Eight":
-					if h == 3 && w == 3 || h == 5 && w == 3 || h == 4 && w == 5 || h == 6 && w == 5 || h == 7 && w == 3 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("48")
+					} else if h == 3 && w == 3 || h == 5 && w == 3 || h == 4 && w == 5 || h == 6 && w == 5 || h == 7 && w == 3 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Nine":
-					if h == 3 && w == 3 || h == 4 && w == 3 || h == 5 && w == 3 || h == 6 && w == 3 || h == 7 && w == 3 || h == 5 && w == 5 || h == 3 && w == 7 || h == 4 && w == 7 || h == 5 && w == 7 || h == 6 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("9")
+					} else if h == 3 && w == 3 || h == 4 && w == 3 || h == 5 && w == 3 || h == 6 && w == 3 || h == 7 && w == 3 || h == 5 && w == 5 || h == 3 && w == 7 || h == 4 && w == 7 || h == 5 && w == 7 || h == 6 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Ten":
-					if h == 3 && w == 3 || h == 4 && w == 3 || h == 5 && w == 3 || h == 6 && w == 3 || h == 4 && w == 5 || h == 6 && w == 5 || h == 7 && w == 3 || h == 3 && w == 7 || h == 4 && w == 7 || h == 5 && w == 7 || h == 6 && w == 7 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("10")
+					} else if h == 3 && w == 3 || h == 4 && w == 3 || h == 5 && w == 3 || h == 6 && w == 3 || h == 4 && w == 5 || h == 6 && w == 5 || h == 7 && w == 3 || h == 3 && w == 7 || h == 4 && w == 7 || h == 5 && w == 7 || h == 6 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
 						fmt.Print(" ")
 					}
 				case value == "Jack":
-					if h == 3 && w == 3 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("J")
+					} else if h == 3 && w == 3 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else if h == 5 && w == 5 {
 						fmt.Print("♝")
@@ -135,7 +128,9 @@ func printCard(suit string, value string) {
 						fmt.Print(" ")
 					}
 				case value == "Queen":
-					if h == 3 && w == 3 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("Q")
+					} else if h == 3 && w == 3 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else if h == 5 && w == 5 {
 						fmt.Print("♛")
@@ -143,7 +138,9 @@ func printCard(suit string, value string) {
 						fmt.Print(" ")
 					}
 				case value == "King":
-					if h == 3 && w == 3 || h == 7 && w == 7 {
+					if h == 2 && w == 2 || w == 8 && h == 8 {
+						fmt.Print("K")
+					} else if h == 3 && w == 3 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else if h == 5 && w == 5 {
 						fmt.Print("♚")
@@ -177,13 +174,9 @@ func getCard(s, v int) string {
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	cards := []string{}
-	for j := 0; j < 4; j++ {
-		for k := 0; k < 13; k++ {
-			cards = append(cards, getCard(j, k))
-		}
-	}
-	chosenCard := cards[getRandomNum(len(cards)-1)]
+	ranSuit := getRandomNum(4)
+	ranVal := getRandomNum(13)
+	chosenCard := getCard(ranSuit, ranVal)
 	splitCard := strings.Split(chosenCard, " ")
 	splitSuit := splitCard[2]
 	splitValue := splitCard[0]
