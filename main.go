@@ -95,7 +95,7 @@ func printCard(suit string, value string) {
 					}
 				case value == "Eight":
 					if h == 2 && w == 2 || w == 8 && h == 8 {
-						fmt.Print("48")
+						fmt.Print("8")
 					} else if h == 3 && w == 3 || h == 5 && w == 3 || h == 4 && w == 5 || h == 6 && w == 5 || h == 7 && w == 3 || h == 3 && w == 7 || h == 5 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
@@ -115,7 +115,12 @@ func printCard(suit string, value string) {
 					} else if h == 3 && w == 3 || h == 4 && w == 3 || h == 5 && w == 3 || h == 6 && w == 3 || h == 4 && w == 5 || h == 6 && w == 5 || h == 7 && w == 3 || h == 3 && w == 7 || h == 4 && w == 7 || h == 5 && w == 7 || h == 6 && w == 7 || h == 7 && w == 7 {
 						suitSwtichCase(suit)
 					} else {
-						fmt.Print(" ")
+						if h == 8 && w == 2 || h == 2 && w == 9 || h == 2 && w == 8 {
+							fmt.Print("")
+						} else {
+							fmt.Print(" ")
+						}
+
 					}
 				case value == "Jack":
 					if h == 2 && w == 2 || w == 8 && h == 8 {
